@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>JustKidding</title>
+
+    <link rel="stylesheet" type="text/css" href="estilos.css"></link>
+
+    <script src="scripts.js"></script>    
+
+</head>
+
+<body>
+    <h1>Exercicios</h1>
+
+    <div class="exercicios">
+        <h2>Calculo Basico</h2>
+        <p class="textoClicavel" id="demoFuncao" onclick="minhaFuncao()">Clique aqui para exibir o resultado de 4 + 5</p>
+    </div>
+
+    <div class="exercicios">
+        <h2>Pegar valores do documento</h2>
+        <p>Primeiro número: <input type="number" id="primeiroNumero" value="10" /></p>
+        <p>Segundo número: <input type="number" id="segundoNumero" value="20" /></p>
+        <button onclick="somarDoisNumeros()">Clique aqui para exibir o resultado</button>
+        <p class="textoClicavel" id="resultado"></p>        
+    </div>
+    <div class="exercicios">
+        <h2>Verificar o valor e tomar uma decisão</h2>
+        <p>Saldo no banco: <input type="number" id="saldo" value="-10" /></p>
+        <button onclick="verificarSaldo()">Como esta minha saúde financeira?</button>
+        <div id="farol"></div>        
+    </div>
+
+    <div class="exercicios" style="height:150pt;">
+        <h2>Mudar posição de um elemento</h2>
+        <p>Tente clicar no quadrado!</p>
+        <div id="quadrado" onmouseover="moverQuadrado()"></div>
+        
+    </div>
+    <div class="exercicios">
+        <h2>Exibir um alerta</h2>
+        <button onclick="alert('Olha o Alerta.')">Clique aqui!</button>
+    </div>
+
+    <div class="exercicios">
+        <h2>Aparecer Data</h2>
+        <button onclick="document.getElementById('demoData').innerHTML=Date();">Clique aqui!</button>
+        <p id="demoData"></p>
+    </div>
+
+    <div class="exercicios">
+        <h2>Ligar e desligar lampada</h2>
+        <button style="display: inline" onclick="document.getElementById('lampada').src='imagens/lampadaLigada.png'">Ligar</button>
+        <img id="lampada" src="imagens/lampadaDesligada.png">
+        <button style="display: inline" onclick="document.getElementById('lampada').src='imagens/lampadaDesligada.png'">Desligar</button>
+     </div>
+
+     <div class="exercicios">
+        <h2>Mudar tamanho do texto</h2>
+        <button type="button" onclick="document.getElementById('demoTexto').style.fontSize='1.5em'">Clique para aumentar o tamanho do texto!</button>
+        <p id="demoTexto">Texto que muda de tamanho.</p>
+      </div>
+     
+</body>
+
+</html>
